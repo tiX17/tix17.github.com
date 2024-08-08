@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Développeur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #5F9EA0, #6495ED);
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        #profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            display: block;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+            }
+            50% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0.9);
+            }
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .skills {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            background-color: #ddd;
+            color: #333;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
+        }
+        #intro {
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .scrolling-text {
+            animation: scroll 20s linear infinite;
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ADD8E6;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ADD8E6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CV de Développeur</h1>
+        <img src="sary.jpg" alt="Photo de profil" id="profile-picture" class="blink">
+    </header>
+    <main>
+        <section id="intro">
+            <div class="scrolling-text">
+                <p>Je suis un développeur passionné avec une solide expérience dans le développement web. J'adore relever de nouveaux défis et créer des solutions innovantes.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Informations personnelles</h2>
+            <p>Nom: RANDRIANJA Tiavina Eliot</p>
+            <p>Email: <a href="mailto:tiavina3180@gmail.com" class="email">tiavina3180@gmail.com</a></p>
+            <p>Téléphone: +261 34 54 516 28</p>
+            <p>Ville: FIANARATSOA</p>
+        </section>
+        <section>
+            <h2>Compétences</h2>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/votre-utilisateur" target="_blank"><img src="github.png" alt="GitHub"></a>
+            <a href="https://www.facebook.com/votre-page" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/in/votre-profil" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+    </footer>
+</body>
+</html>
